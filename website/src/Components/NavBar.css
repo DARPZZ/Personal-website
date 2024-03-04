@@ -1,0 +1,23 @@
+.container{
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+}
+.routing {
+    position: relative;
+    width: 80%;
+    font-size: 150%;
+    left: 10%;
+    top: 0px;
+}
+ul
+{
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+}
+li{
+    width: 20%;
+}
+
+
