@@ -1,40 +1,39 @@
-import React from 'react';
-import { HashRouter as Router, Link,Routes,Route } from 'react-router-dom';
-import Test from './Test';
+import { HashRouter as Router, Link, Routes, Route } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import Home from './home';
 import './NavBar.css';
 
 function NavBar() {
     return (
-        <div className='container'>
-            <div className='routing'>
+        <>
+            <div className='container'>
+                <div className='routing'>
                     <nav>
                         <ul>
                             <li>
-                                <Link to="/tech">Technologies</Link>
+                                <HashLink smooth to="/#tech">Technologies</HashLink>
                             </li>
                             <li>
                                 <Link to="/">Home</Link>
                             </li>
                             <li>
-                                <Link to="/about">About</Link>
+                                <HashLink smooth to="/#about">About</HashLink>
                             </li>
                             <li>
-                                <Link to="/contact">Contact</Link>
+                                <HashLink smooth to="/#contact">Contact</HashLink>
                             </li>
                             <li>
-                                <Link to="projects">Projects</Link>
+                                <HashLink smooth to="/#projects">Projects</HashLink>
                             </li>
                         </ul>
                     </nav>
-            <Routes>
-          <Route path='/tech' Component={Test}/>
-          <Route path='/' Component={Home}/>
-
-          
-        </Routes>
+                    <Routes>
+                        <Route path='/' element={<Home />} />
+                    </Routes>
+                </div>
             </div>
-        </div>
+            <div className='navbar-placeholder'></div>
+        </>
     );
 }
 
