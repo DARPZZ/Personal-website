@@ -11,6 +11,7 @@ function About() {
             <div className='text'>
                 <h2>Welcome to my website</h2>
                 <p>Information about me here</p>
+                <p> Her vil der stå noget text som er meget spændende</p>
             </div>
         </div>
     );

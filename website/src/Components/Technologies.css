@@ -1,0 +1,33 @@
+.container {
+    overflow: hidden;
+}
+
+.logos {
+    display: flex;
+    animation: carousel 20s infinite linear;
+}
+
+.logo-slide {
+    display: flex;
+}
+
+.logo-slide img {
+    margin: 0 40px;
+    height: 210px; 
+    width: auto; 
+    object-fit: cover; 
+}
+
+
+@keyframes carousel {
+    0% {
+        transform: translateX(calc(100% + 50px)); 
+    }
+    100% {
+        transform: translateX(calc(-100% - 50px)); 
+    }
+}
+
+.header{
+    color: white;
+}
