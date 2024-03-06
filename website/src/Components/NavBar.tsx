@@ -1,13 +1,13 @@
 import React from 'react';
 import { HashRouter as Router, Link,Routes,Route } from 'react-router-dom';
 import Test from './Test';
+import Home from './home';
 import './NavBar.css';
 
 function NavBar() {
     return (
         <div className='container'>
             <div className='routing'>
-                
                     <nav>
                         <ul>
                             <li>
@@ -29,6 +29,7 @@ function NavBar() {
                     </nav>
             <Routes>
           <Route path='/tech' Component={Test}/>
+          <Route path='/' Component={Home}/>
 
           
         </Routes>
