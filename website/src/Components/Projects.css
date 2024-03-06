@@ -1,0 +1,25 @@
+.container{
+    position: relative;
+    width: 100%;
+    height: 200%;
+}
+.caro{
+    color: white;
+    width: 150%;
+    margin-top: 10%;
+    
+}
+.project-header{
+    color: white;
+    font-size: 30px;
+}
+.card-style {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px; 
+    border: 2px solid transparent; 
+    background-image: linear-gradient(to right,violet, blue);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+    height: 100svh;
+}
