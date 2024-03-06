@@ -5,6 +5,8 @@ import 'react-multi-carousel/lib/styles.css';
 import GitHubProjectComponent from './GithubProjects';
 import mineswep from '../assets/Minesweeper.png'
 import snake from '../assets/Snake.png'
+import Blackjack from '../assets/Blackjack.png'
+import nameguide from '..//assets/Name guide.png'
 
 function Projects() {
   const responsive = {
@@ -38,6 +40,17 @@ function Projects() {
     link: "https://github.com/DARPZZ/Snake-game",
     gameImage:snake,
   }
+  const blackjack ={
+    name: "Blackjack",
+    link: "https://github.com/DARPZZ/Black-jack",
+    gameImage: Blackjack,
+  }
+  const nameGuide ={
+    name: "Name guide",
+    link: "https://github.com/DARPZZ/Baby-names",
+    gameImage: nameguide
+
+  }
 
 
   return (
@@ -49,8 +62,9 @@ function Projects() {
         <Carousel responsive={responsive} swipeable={true} draggable={true} arrows={true}>
           <GitHubProjectComponent project={Minesweeper} />
           <GitHubProjectComponent project={SnakeGame}/>
-          <div>Item 3</div>
-          <div>Item 4</div>
+          <GitHubProjectComponent project={blackjack}/>
+          <GitHubProjectComponent project={nameGuide}/>
+          
         </Carousel>
       </div>
     </div>

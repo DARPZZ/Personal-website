@@ -23,8 +23,9 @@ const GitHubProjectComponent: React.FC<Props> = ({ project }) => {
           <h2>{project.name}</h2>
         </div>
         <p>
-          <a href={project.link} target="_blank" rel="noopener noreferrer">
+          
             <img src={project.gameImage} alt={project.name} width={300} height={250} />
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
             <img src={github} alt="GitHub" width={150} height={75} /> 
           </a>
         </p>
