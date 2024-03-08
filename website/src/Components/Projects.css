@@ -9,6 +9,12 @@
     
 }
 .project-header{
+    position: relative;
+    right: 8%;
+    color: white;
+    font-size: 30px;
+}
+.project-name{
     color: white;
     font-size: 30px;
 }

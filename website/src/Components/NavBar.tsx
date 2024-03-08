@@ -68,7 +68,6 @@ function NavBar() {
                     </Routes>
                 </div>
             </div>
-            <div className='navbar-placeholder'></div>
         </>
     );
 }

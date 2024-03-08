@@ -19,7 +19,7 @@ const GitHubProjectComponent: React.FC<Props> = ({ project }) => {
   return (
     <div className='container'>
       <div className='card-style'>
-        <div className='project-header'>
+        <div className='project-name'>
           <h2>{project.name}</h2>
         </div>
         <p>
