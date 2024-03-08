@@ -8,7 +8,7 @@ import NavBar from "./NavBar"
 function Home() {
     return (
         <div className='container'>
-           
+            
             <div id='about' className='about'>
                 <About></About>
             </div>

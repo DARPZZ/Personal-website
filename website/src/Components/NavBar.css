@@ -15,9 +15,15 @@ ul
     display: flex;
     flex-direction: row; 
     width: 100%;
+    list-style-type: none
 }
 li{
     width: 20%;
 }
 
-
+.sticky-nav{
+    position: fixed;
+    top: 0;
+    width: 80%;
+    z-index: 1;
+}

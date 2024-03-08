@@ -4,17 +4,25 @@ import Home from './home';
 import './NavBar.css';
 
 function NavBar() {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+
     return (
         <>
             <div className='container'>
                 <div className='routing'>
+                    <div className='sticky-nav'>
                     <nav>
                         <ul>
                             <li>
                                 <HashLink smooth to="/#tech">Technologies</HashLink>
                             </li>
                             <li>
-                                <Link to="/">Home</Link>
+                                <Link to="/" onClick={scrollToTop}>Home</Link>
                             </li>
                             <li>
                                 <HashLink smooth to="/#about">About</HashLink>
@@ -27,6 +35,7 @@ function NavBar() {
                             </li>
                         </ul>
                     </nav>
+                    </div>
                     <Routes>
                         <Route path='/' element={<Home />} />
                     </Routes>
