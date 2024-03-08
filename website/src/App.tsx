@@ -8,6 +8,14 @@ function App() {
 
   return (
     <div className='container'>
+       <section>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          
+        </section>
        <div className='nav-bar'>
         <NavBar></NavBar>
       </div>

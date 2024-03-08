@@ -10,7 +10,7 @@ const HashLink = (props) => {
     const element = document.getElementById(id);
     if (element) {
       const rect = element.getBoundingClientRect();
-      const top = rect.top + window.scrollY - 50;
+      const top = rect.top + window.scrollY - 100;
       window.scrollTo({
         top,
         behavior: 'smooth',
