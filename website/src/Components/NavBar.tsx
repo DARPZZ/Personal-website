@@ -1,9 +1,7 @@
 import { HashRouter as Router, Link, Routes, Route } from 'react-router-dom';
 import Home from './home';
 import './NavBar.css';
-
 import './home.css'
-
 import { HashLink as BaseHashLink } from 'react-router-hash-link';
 
 const HashLink = (props) => {
@@ -46,20 +44,22 @@ function NavBar() {
                     <div className="animation"></div>
                         <ul>
                             <li>
+                                <Link to="/" onClick={scrollToTop}>Home</Link>
+                            </li>
+                            <li>
                                 <HashLink smooth to="/#tech">Technologies</HashLink>
                             </li>
                             <li>
-                                <Link to="/" onClick={scrollToTop}>Home</Link>
-                            </li>
+                                <HashLink smooth to="/#projects">Projects</HashLink>
+                            </li>   
+                           
                             <li>
                                 <HashLink smooth to="/#about">About</HashLink>
                             </li>
                             <li>
                                 <HashLink smooth to="/#contact">Contact</HashLink>
                             </li>
-                            <li>
-                                <HashLink smooth to="/#projects">Projects</HashLink>
-                            </li>
+                           
                         </ul>
                     </nav>
                     </div>

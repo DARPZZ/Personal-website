@@ -64,7 +64,6 @@ function Projects() {
           <GitHubProjectComponent project={SnakeGame}/>
           <GitHubProjectComponent project={blackjack}/>
           <GitHubProjectComponent project={nameGuide}/>
-          
         </Carousel>
       </div>
     </div>
