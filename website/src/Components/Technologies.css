@@ -4,7 +4,7 @@
 
 .logos {
     display: flex;
-    animation: carousel 30s infinite linear;
+    animation: carousel 20s infinite linear;
 }
 
 .logo-slide {
