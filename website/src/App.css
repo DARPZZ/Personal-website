@@ -36,7 +36,7 @@ span{
   left:50%;
   width: 4px;
   height: 4px;
-  background: #fff;
+  background: #4fc2ec;
   border-radius: 50%;
   box-shadow: 0 0 0 4px rgba(255,255,255,0.1),0 0 0 8px rgba(255,255,255,0.1),0 0 20px rgba(255,255,255,0.1);
   animation: animate 3s linear infinite;
@@ -48,7 +48,7 @@ span::before{
   transform: translateY(-50%);
   width: 300px;
   height: 1px;
-  background: linear-gradient(90deg,#fff,transparent);
+  background: linear-gradient(90deg,violet,transparent);
 }
 @keyframes animate
 {

@@ -56,7 +56,7 @@ function Projects() {
   return (
     <div className='container'>
       <div className='project-header'>
-        <h2>Projects that I have made</h2>
+        <h2>Projects  I have made</h2>
       </div>
       <div className='caro'>
         <Carousel responsive={responsive} swipeable={true} draggable={true} arrows={true}>

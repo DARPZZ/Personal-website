@@ -24,7 +24,7 @@
         transform: translateX(calc(100% + 50px)); 
     }
     100% {
-        transform: translateX(calc(-100% - 400px)); 
+        transform: translateX(calc(-100% - 150px)); 
     }
 }
 .header {
