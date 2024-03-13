@@ -3,10 +3,12 @@ import './Projects.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import GitHubProjectComponent from './GithubProjects';
+import SpecialGitHubProjectComponent from './SpecialGitHubProjectComponent';
 import mineswep from '../assets/Minesweeper.png'
 import snake from '../assets/Snake.png'
 import Blackjack from '../assets/Blackjack.png'
 import nameguide from '..//assets/Name guide.png'
+import rockPaperSis from '../assets/rockpaper .png'
 
 function Projects() {
   const responsive = {
@@ -51,6 +53,13 @@ function Projects() {
     gameImage: nameguide
 
   }
+  const rockPaper={
+    name: "Rock paper",
+    link: "https://github.com/DARPZZ/Rock-paper-scissors",
+    gameImage: rockPaperSis,
+    playGame: "https://darpzz.github.io/Rock-paper-scissors/"
+
+  }
 
 
   return (
@@ -64,6 +73,7 @@ function Projects() {
           <GitHubProjectComponent project={SnakeGame}/>
           <GitHubProjectComponent project={blackjack}/>
           <GitHubProjectComponent project={nameGuide}/>
+          <SpecialGitHubProjectComponent project={rockPaper}/>
         </Carousel>
       </div>
     </div>

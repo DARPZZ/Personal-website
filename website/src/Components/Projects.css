@@ -34,3 +34,13 @@
     position: relative;
     right: 30%;
 }
+.hest{
+    
+    width: 30%;
+}
+.play-button{
+    position: relative;
+    left: 50%;
+    margin-top: -30%;
+    width: 30%;
+}
