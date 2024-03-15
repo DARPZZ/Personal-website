@@ -14,6 +14,12 @@ function App() {
             <span></span>
             <span></span>
             <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          
           
         </section>
        <div className='nav-bar'>

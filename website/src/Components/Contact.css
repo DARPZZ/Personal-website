@@ -1,0 +1,16 @@
+.container{
+    position: relative;
+    width: 100%;
+}
+h3{
+    color: white;
+}
+.linkedIn-inner{
+    width: 20%;
+}
+.Gmail-inner{
+    position: relative;
+    left: 50%;
+    width: 20%;
+    bottom: 20svb;
+}
