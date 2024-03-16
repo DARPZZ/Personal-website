@@ -1,16 +1,32 @@
 .container{
     position: relative;
     width: 100%;
+    
 }
-h3{
-    color: white;
-}
+
 .linkedIn-inner{
     width: 20%;
 }
 .Gmail-inner{
-    position: relative;
-    left: 50%;
     width: 20%;
-    bottom: 20svb;
+}
+.links{
+    position: relative;
+    display: flex; 
+    justify-content: center; 
+    right: 10%;
+
+}
+.contact-text{
+    position: relative;
+    text-align: center;
+    right: 10%;
+    font-size: 30px;
+    background-image: linear-gradient(to right, violet, blue);
+    background-clip: text;
+    color: transparent;
+}
+.email{
+    color: white;
+    font-size: 15px;
 }

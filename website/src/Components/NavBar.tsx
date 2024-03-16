@@ -47,15 +47,17 @@ function NavBar() {
                                 <Link to="/" onClick={scrollToTop}>Home</Link>
                             </li>
                             <li>
+                                <HashLink smooth to="/#about">About</HashLink>
+                            </li>
+                            <li>
                                 <HashLink smooth to="/#tech">Technologies</HashLink>
                             </li>
+                            
                             <li>
                                 <HashLink smooth to="/#projects">Projects</HashLink>
                             </li>   
                            
-                            <li>
-                                <HashLink smooth to="/#about">About</HashLink>
-                            </li>
+                          
                             <li>
                                 <HashLink smooth to="/#contact">Contact</HashLink>
                             </li>

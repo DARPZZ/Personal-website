@@ -8,12 +8,15 @@
     margin-top: 5%;
     
 }
-.project-header{
+.project-header {
     position: relative;
     right: 8%;
-    color: white;
     font-size: 30px;
+    background-image: linear-gradient(to right, violet, blue);
+    background-clip: text;
+    color: transparent;
 }
+
 .project-name{
     color: white;
     font-size: 30px;
@@ -32,7 +35,7 @@
 }
 .github-logo{
     position: relative;
-    right: 30%;
+    left: 40%;
 }
 .hest{
     
@@ -43,4 +46,7 @@
     left: 50%;
     margin-top: -30%;
     width: 30%;
+}
+.decide-a{
+    width: 50%;
 }
