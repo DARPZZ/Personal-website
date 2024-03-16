@@ -94,7 +94,7 @@ li {
   }
 
 
-@media (max-width: 768px) {
+@media (max-width: 735px) {
     .container {
       font-size: 100%;
     }
