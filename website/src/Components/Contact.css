@@ -33,14 +33,19 @@
 
 @media only screen and (max-width: 735px) {
     .contact-text {
-        font-size: 25px;
+        font-size: 20px;
+        left: 1%;
     }
     .linkedIn-inner{
      position: relative;
-     right: 30%;
+     right: 40%;
     }
     .Gmail-inner{
         position: relative;
-        left: 5%;
+        left: 10%;
+    }
+    .email{
+        position: relative;
+        right: 70%;
     }
   }

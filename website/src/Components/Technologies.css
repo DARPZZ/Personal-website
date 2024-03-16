@@ -28,11 +28,11 @@
     }
 }
 .header {
-    position: relative;
+
     background-image: linear-gradient(to right, violet, blue);
     background-clip: text;
     color: transparent;
     font-size: 30px;
     text-align: center;
-    right: 8%;
+
 }

@@ -20,7 +20,7 @@ const SpecialGitHubProjectComponent: React.FC<Props> = ({ project }) => {
             <h2>{project.name}</h2>
           </div>
           <div>
-            <img src={project.gameImage} alt={project.name} width={300} height={250} />
+            <img src={project.gameImage} alt={project.name} className='gmae-img' />
             <div className='hest'>
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <div className='github-logo'>
