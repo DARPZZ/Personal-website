@@ -50,3 +50,8 @@
 .decide-a{
     width: 50%;
 }
+@media only screen and (max-width: 600px) {
+    .project-header {
+        font-size: 25px;
+    }
+  }

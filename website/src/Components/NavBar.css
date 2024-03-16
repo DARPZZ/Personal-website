@@ -89,3 +89,64 @@ li {
     left: 0;
     background-color: transparent; 
 }
+.nav-toggle {
+    display: none;
+  }
+
+
+@media (max-width: 768px) {
+    .container {
+      font-size: 100%;
+    }
+  
+    .routing {
+      left: 0; 
+    }
+  
+    .sticky-nav {
+      position: fixed;
+      top: 0;
+      left: 0; 
+      transform: none; 
+      width: 100%; 
+      height: auto; 
+      z-index: 999; 
+    }
+  
+    ul {
+      flex-direction: column; 
+    }
+  
+    li {
+      width: 100%; 
+    }
+  
+    .sticky-nav ul li {
+      justify-content: center; 
+      padding: 10px 0; 
+    }
+  
+    .sticky-nav ul li a {
+      padding: 10px; 
+    }
+    .sticky-nav .animation {
+      display: none;
+    }
+    .nav-toggle {
+        position: relative;
+        display: block;
+        left: 50%;
+        height: 20px;
+      }
+      .sticky-nav ul {
+        display: none;
+      }
+    
+      .sticky-nav.open ul {
+        display: block;
+      }
+      .hamburger-style{
+        height: 200%;
+      }
+      
+  }

@@ -30,3 +30,17 @@
     color: white;
     font-size: 15px;
 }
+
+@media only screen and (max-width: 600px) {
+    .contact-text {
+        font-size: 25px;
+    }
+    .linkedIn-inner{
+     position: relative;
+     right: 30%;
+    }
+    .Gmail-inner{
+        position: relative;
+        left: 5%;
+    }
+  }
