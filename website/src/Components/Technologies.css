@@ -28,7 +28,8 @@
     }
 }
 .header {
-
+    position: relative;
+    right:8% ;
     background-image: linear-gradient(to right, violet, blue);
     background-clip: text;
     color: transparent;
