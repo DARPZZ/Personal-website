@@ -9,19 +9,19 @@ import snake from '../assets/Snake.png'
 import Blackjack from '../assets/Blackjack.png'
 import nameguide from '..//assets/Name guide.png'
 import rockPaperSis from '../assets/rockpaper .png'
-import Pil1 from '../assets/chevron-svgrepo-com.png'
-import Pil2 from '../assets/chevron-svgrepo-com (1).png'
+import højrePil from '../assets/Højrepil.png'
+import venstrePil from '../assets/Venstrepil.png'
 const PreviousButton = ({ className = '', onClick }) => (
   <div className='button1-div'>
   <button id='test' className={`carousel-button-one ${className}`} onClick={onClick}>
-  <img src={Pil2} width={25} height={25}/>
+  <img src={venstrePil} width={40} height={40}/>
   </button>
   </div>
 );
 
 const NextButton = ({ className = '', onClick }) => (
   <button className={`carousel-button-two ${className}`} onClick={onClick}>
-    <img src={Pil1} width={25} height={25}/>
+    <img src={højrePil} width={25} height={25}/>
     
   </button>
 );
@@ -99,7 +99,7 @@ function Projects() {
         <h2>Projects  I have made</h2>
       </div>
       <div className='caro'>
-        <Carousel responsive={responsive} customButtonGroup={<ButtonGroup next={NextButton} previous={PreviousButton} />} swipeable={true} draggable={true} arrows={true}>
+        <Carousel responsive={responsive} customButtonGroup={<ButtonGroup next={NextButton} previous={PreviousButton} />} swipeable={true} draggable={true} arrows={false}>
           <div><GitHubProjectComponent project={Minesweeper} /></div>
            <div><GitHubProjectComponent project={SnakeGame}/></div>
           <div> <GitHubProjectComponent project={blackjack}/></div>
