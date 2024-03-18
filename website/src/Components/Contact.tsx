@@ -16,9 +16,11 @@ function Contact() {
             </a>
           </div>
           <div className='Gmail-inner'>
-            <img src={GmailLogo} alt="Gmail" width={150} height={100} />
-            <h5 className='email'>rasmustofthermansen@gmail.com</h5>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rasmustofthermansen@gmail.com" target="_blank" rel="noopener noreferrer">
+              <img src={GmailLogo} alt="Gmail" width={150} height={100} />
+            </a>
           </div>
+
         </div>
       </div>
     </div>

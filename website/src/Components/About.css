@@ -6,19 +6,31 @@
     right: 5%;
     
 }
-.text{
-    position: relative;
+.text {
+    position: absolute;
     left: 40%;
     width: 50%;
-    bottom: 400px;
+    bottom: 20%; 
     color: white;
     font-size: 20px;
+    max-height: calc(100% - 20px);
     
+}
+
+#person-billede{
+    width: 75%;
+    height: 75%;
 }
 @media only screen and (max-width: 735px) {
     .text {
       position: relative;
-      top: 2vh;
-      left: 18%;
+      margin-top: 90%;
+      left: 32%;
+    }
+    #person-billede{
+        position: relative;
+        left: 55%;
+        width: 200%;
+        height: 200%;
     }
   }

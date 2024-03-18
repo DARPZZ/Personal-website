@@ -29,7 +29,7 @@
 }
 .header {
     position: relative;
-    right:8% ;
+    right:9% ;
     background-image: linear-gradient(to right, violet, blue);
     background-clip: text;
     color: transparent;

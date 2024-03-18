@@ -5,12 +5,14 @@ function About() {
     return (
         <div className='about'>
             <div className='picture'>
-            <img src={pic} alt="" width={400} height={400}/>
+            <img id='person-billede' src={pic} />
             </div>
             <div className='text'>
                 <h2>Welcome to my website</h2>
-                <p>Information about me here</p>
-                <p> Her vil der stå noget text som er meget spændende</p>
+                <p>I am an ambitious computer science student at EASV, seeking an internship focusing on both frontend and backend development.</p>
+                <p>My education has equipped me with a solid understanding of programming languages, databases, and system development.</p>
+                <p>I am driven by a constant curiosity and a passion for diving into complex technologies and solving problems.</p>
+                <p>Throughout my education, I have developed many different things.</p>
             </div>
         </div>
     );
