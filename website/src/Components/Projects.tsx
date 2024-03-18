@@ -9,6 +9,24 @@ import snake from '../assets/Snake.png'
 import Blackjack from '../assets/Blackjack.png'
 import nameguide from '..//assets/Name guide.png'
 import rockPaperSis from '../assets/rockpaper .png'
+import Pil1 from '../assets/chevron-svgrepo-com.png'
+import Pil2 from '../assets/chevron-svgrepo-com (1).png'
+const PreviousButton = ({ className = '', onClick }) => (
+  <div className='button1-div'>
+  <button id='test' className={`carousel-button-one ${className}`} onClick={onClick}>
+  <img src={Pil2} width={25} height={25}/>
+  </button>
+  </div>
+);
+
+const NextButton = ({ className = '', onClick }) => (
+  <button className={`carousel-button-two ${className}`} onClick={onClick}>
+    <img src={Pil1} width={25} height={25}/>
+    
+  </button>
+);
+
+
 
 function Projects() {
   const responsive = {
@@ -28,6 +46,19 @@ function Projects() {
       slidesToSlide: 1,
     },
   };
+  const ButtonGroup = ({ next, previous, ...rest }) => {
+  const { carouselState: { currentSlide } } = rest;
+  return (
+    <div className="carousel-button-group">
+      <div className="left-button">
+        <PreviousButton className={currentSlide === 0 ? 'disable' : ''} onClick={() => previous()} />
+      </div>
+      <div className="right-button">
+        <NextButton onClick={() => next()} />
+      </div>
+    </div>
+  );
+};
 
 
   const Minesweeper = {
@@ -68,12 +99,12 @@ function Projects() {
         <h2>Projects  I have made</h2>
       </div>
       <div className='caro'>
-        <Carousel responsive={responsive} swipeable={true} draggable={true} arrows={true}>
-          <GitHubProjectComponent project={Minesweeper} />
-          <GitHubProjectComponent project={SnakeGame}/>
-          <GitHubProjectComponent project={blackjack}/>
-          <GitHubProjectComponent project={nameGuide}/>
-          <SpecialGitHubProjectComponent project={rockPaper}/>
+        <Carousel responsive={responsive} customButtonGroup={<ButtonGroup next={NextButton} previous={PreviousButton} />} swipeable={true} draggable={true} arrows={true}>
+          <div><GitHubProjectComponent project={Minesweeper} /></div>
+           <div><GitHubProjectComponent project={SnakeGame}/></div>
+          <div> <GitHubProjectComponent project={blackjack}/></div>
+          <div><GitHubProjectComponent project={nameGuide}/></div>
+          <div><SpecialGitHubProjectComponent project={rockPaper}/></div>
         </Carousel>
       </div>
     </div>
