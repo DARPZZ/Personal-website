@@ -45,3 +45,8 @@
         right: 70%;
     }
   }
+  @media only screen and (min-width: 2000px) {
+    .contact-text{
+        font-size: 45px;
+    }
+}

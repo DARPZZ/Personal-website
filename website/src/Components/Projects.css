@@ -48,9 +48,9 @@
     width: 30%;
 }
 .play-button{
-    position: relative;
+    position: absolute;
     left: 50%;
-    margin-top: -30%;
+    bottom: 15%;
     width: 30%;
 }
 .decide-a{
@@ -91,6 +91,7 @@
   .right-button {
     text-align: right;
   }
+  
 @media only screen and (max-width: 735px) {
     .project-header {
         font-size: 25px;
@@ -102,3 +103,14 @@
     }
     
   }
+@media only screen and (min-width: 2000px) {
+  .project-header{
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .play-button{
+    display: none;
+  }
+  
+}
