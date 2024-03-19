@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 import './Technologies.css';
 import Csharp from '../assets/CSharp.png'
 import Java from '../assets/java.png';
@@ -11,13 +12,26 @@ import cassandra from  '../assets/cassandra-removebg-preview.png'
 import react from '../assets/react-removebg-preview.png';
 
 function Technologies() {
+    const logosRef = useRef(null);
+
+    useEffect(() => {
+        const tl = gsap.timeline({repeat: -1 });
+        tl.fromTo(logosRef.current, {
+            x: logosRef.current.offsetWidth,
+        }, {
+            x: -logosRef.current.scrollWidth,
+            duration: (logosRef.current.scrollWidth + logosRef.current.offsetWidth) / 150,
+            ease: "linear"
+        });
+    }, []);
+
     return (
         <div className='container'>
             <div className='technologies'>
                 <div className='header'>
                     <h2>Tech I have been working with</h2>
                 </div>
-                <div className='logos'>
+                <div className='logos' ref={logosRef}>
                     <div className='logo-slide'>
                         {technologies.map((tech, index) => (
                             <div key={index}>
@@ -34,7 +48,6 @@ function Technologies() {
         </div>
     );
 }
-
 
 const technologies = [
     { name: 'C#', image: Csharp },

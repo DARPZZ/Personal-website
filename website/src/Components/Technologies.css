@@ -4,7 +4,6 @@
 
 .logos {
     display: flex;
-    animation: carousel 20s infinite linear;
 }
 
 .logo-slide {
@@ -17,21 +16,13 @@
     width: auto; 
     object-fit: cover; 
 }
+
 #tech-name{
     position: relative;
-    
     color: white;
     font-size: 20px;
 }
 
-@keyframes carousel {
-    0% {
-        transform: translateX(calc(100% + 50px)); 
-    }
-    100% {
-        transform: translateX(calc(-100% - 150px)); 
-    }
-}
 .header {
     position: relative;
     right:9% ;
@@ -40,7 +31,6 @@
     color: transparent;
     font-size: 30px;
     text-align: center;
-
 }
 
 @media only screen and (max-width: 735px) {
@@ -48,12 +38,11 @@
         position: relative;
         left: 0.5%;
     }
-    
-  }
+}
+
 @media only screen and (min-width: 2000px) {
     .header{
         font-size: 45px;
-        
     }
     .logo-slide img {
         margin: 0 30px;
@@ -61,5 +50,4 @@
         width: auto; 
         object-fit: cover; 
     }
-
 }
