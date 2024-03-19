@@ -17,7 +17,12 @@
     width: auto; 
     object-fit: cover; 
 }
-
+#tech-name{
+    position: relative;
+    
+    color: white;
+    font-size: 20px;
+}
 
 @keyframes carousel {
     0% {

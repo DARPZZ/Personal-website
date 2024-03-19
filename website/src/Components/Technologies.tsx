@@ -20,11 +20,13 @@ function Technologies() {
                 <div className='logos'>
                     <div className='logo-slide'>
                         {technologies.map((tech, index) => (
-                            <img
-                                key={index}
-                                src={tech.image}
-                                alt={tech.name}
-                            />
+                            <div key={index}>
+                                <img
+                                    src={tech.image}
+                                    alt={tech.name}
+                                />
+                                <p id='tech-name'>{tech.name}</p>
+                            </div>
                         ))}
                     </div>
                 </div>
@@ -33,12 +35,13 @@ function Technologies() {
     );
 }
 
+
 const technologies = [
     { name: 'C#', image: Csharp },
     { name: 'Java', image: Java },
-    { name: 'python', image: python },
+    { name: 'Python', image: python },
     { name: 'Docker', image: docker },
-    { name: 'github', image: github },
+    { name: 'Github', image: github },
     { name: 'SQL', image: sql },
     { name: 'MongoDB', image: mongoDB},
     { name: 'Cassandra', image: cassandra},
