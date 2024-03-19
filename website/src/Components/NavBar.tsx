@@ -4,6 +4,7 @@ import './NavBar.css';
 import './home.css'
 import { HashLink as BaseHashLink } from 'react-router-hash-link';
 import { useState } from 'react';
+import ham from '../assets/WhiteHamburgerIcon.png'
 
 const HashLink = (props) => {
   const { to, ...rest } = props;
@@ -53,7 +54,10 @@ function NavBar() {
             <div className='routing'>
               <div className={`sticky-nav ${isOpen ? 'open' : ''}`}>
                 <button className="nav-toggle" onClick={toggleMenu} aria-label="toggle navigation">
-                  <span className="hamburger"></span>
+                <img id='nav-toggle-button' src={ham} alt=""width={20} height={20}/>
+                  <span className="hamburger">
+                    
+                  </span>
                 </button>
                 <nav>
                   <div className="animation start-home"></div>

@@ -114,11 +114,15 @@ li {
     }
   
     ul {
-      flex-direction: column; 
+      position: relative;
+      flex-direction: column;
+      right: 5%;
     }
   
     li {
-      width: 100%; 
+      width: 100%;
+      
+
     }
   
     .sticky-nav ul li {
@@ -132,10 +136,21 @@ li {
     .sticky-nav .animation {
       display: none;
     }
+    #nav-toggle-button{
+      background: none;
+      background-color: transparent;
+      border: none;
+      
+    }
     .nav-toggle {
         position: relative;
+        background: none;
+        background: transparent;
+        border: none;
+        padding: 0;
         display: block;
-        left: 50%;
+        width: 50%;
+        margin: 0 auto;
         height: 20px;
       }
       .sticky-nav ul {
@@ -144,9 +159,6 @@ li {
     
       .sticky-nav.open ul {
         display: block;
-      }
-      .hamburger-style{
-        height: 200%;
       }
       
   }
