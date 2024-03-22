@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import './Technologies.css';
 import Csharp from '../assets/CSharp.png'
@@ -13,17 +13,45 @@ import react from '../assets/react-removebg-preview.png';
 
 function Technologies() {
     const logosRef = useRef(null);
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+    const handleResize = () => {
+        setScreenWidth(window.innerWidth);
+    };
 
     useEffect(() => {
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+    function chooseSpeed(speed:number){
         const tl = gsap.timeline({repeat: -1 });
         tl.fromTo(logosRef.current, {
             x: logosRef.current.offsetWidth,
         }, {
             x: -logosRef.current.scrollWidth,
-            duration: (logosRef.current.scrollWidth + logosRef.current.offsetWidth) / 150,
+            duration: (logosRef.current.scrollWidth + logosRef.current.offsetWidth) / (window.innerWidth/speed),
             ease: "linear"
         });
-    }, []);
+    }
+    function normalSpeed()
+    {
+        chooseSpeed(10)
+    }
+    function mobileSpeed()
+    {
+        chooseSpeed(3)
+    }
+    useEffect(() => {
+       if (window.innerWidth <400)
+       {
+        mobileSpeed()
+       }else{
+        normalSpeed()
+       }
+       
+    }, [screenWidth]);
 
     return (
         <div className='container'>

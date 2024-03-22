@@ -50,4 +50,7 @@
         width: auto; 
         object-fit: cover; 
     }
+    #tech-name{
+        font-size: 45px;
+    }
 }
