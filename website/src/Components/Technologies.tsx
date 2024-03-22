@@ -44,14 +44,13 @@ function Technologies() {
         chooseSpeed(3)
     }
     useEffect(() => {
-       if (window.innerWidth <400)
-       {
-        mobileSpeed()
-       }else{
-        normalSpeed()
-       }
-       
-    }, [screenWidth]);
+        if (window.innerWidth < 400) {
+             mobileSpeed();
+        } else {
+             normalSpeed();
+        }
+     }, [screenWidth, window.innerWidth]); 
+     
 
     return (
         <div className='container'>
