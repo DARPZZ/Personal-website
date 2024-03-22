@@ -14,43 +14,52 @@ import react from '../assets/react-removebg-preview.png';
 function Technologies() {
     const logosRef = useRef(null);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    const [loadedImages, setLoadedImages] = useState(0);
 
     const handleResize = () => {
         setScreenWidth(window.innerWidth);
     };
 
+    const handleImageLoad = () => {
+        setLoadedImages(prevCount => prevCount + 1);
+    };
+
     useEffect(() => {
         window.addEventListener('resize', handleResize);
+        window.dispatchEvent(new Event('resize'));
         return () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-    function chooseSpeed(speed:number){
-        const tl = gsap.timeline({repeat: -1 });
+
+    function chooseSpeed(speed) {
+        const tl = gsap.timeline({repeat: -1});
+        const duration = (logosRef.current.scrollWidth + logosRef.current.offsetWidth) / (window.innerWidth / speed);
         tl.fromTo(logosRef.current, {
             x: logosRef.current.offsetWidth,
         }, {
             x: -logosRef.current.scrollWidth,
-            duration: (logosRef.current.scrollWidth + logosRef.current.offsetWidth) / (window.innerWidth/speed),
+            duration: duration,
             ease: "linear"
         });
     }
-    function normalSpeed()
-    {
+    
+    function normalSpeed() {
         chooseSpeed(10)
     }
-    function mobileSpeed()
-    {
+    function mobileSpeed() {
         chooseSpeed(3)
     }
+    
     useEffect(() => {
-        if (window.innerWidth < 400) {
-             mobileSpeed();
-        } else {
-             normalSpeed();
+        if (loadedImages === technologies.length) {
+            if (window.innerWidth < 400) {
+                mobileSpeed();
+            } else {
+                normalSpeed();
+            }
         }
-     }, [screenWidth, window.innerWidth]); 
-     
+    }, [loadedImages, screenWidth]); 
 
     return (
         <div className='container'>
@@ -65,6 +74,7 @@ function Technologies() {
                                 <img
                                     src={tech.image}
                                     alt={tech.name}
+                                    onLoad={handleImageLoad}
                                 />
                                 <p id='tech-name'>{tech.name}</p>
                             </div>
