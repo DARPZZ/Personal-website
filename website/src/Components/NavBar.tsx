@@ -1,10 +1,12 @@
-import { HashRouter as Router, Link, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Link, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './home';
 import './NavBar.css';
 import './home.css'
-import { HashLink as BaseHashLink } from 'react-router-hash-link';
 import { useState } from 'react';
 import ham from '../assets/WhiteHamburgerIcon.png'
+import MinesweeperInfo from './Info-Components/MinesweeperInfo';
+import { HashLink as BaseHashLink } from 'react-router-hash-link';
+
 
 const HashLink = (props) => {
   const { to, ...rest } = props;
@@ -30,6 +32,9 @@ const HashLink = (props) => {
 };
 
 function NavBar() {
+  
+    const location = useLocation();
+    const isMinesweeperInfo = location.pathname === '/MineSweeperInfo';
     const [isOpen, setIsOpen] = useState(false);
   
     const toggleMenu = () => {
@@ -44,15 +49,14 @@ function NavBar() {
     };
     
     const closeMenu = () => {
-        
       setIsOpen(false);
     };
     
     return (
         <>
-          <div className='container'>
+            <div className={`routing ${isMinesweeperInfo ? 'minesweeper-info' : ''}`}></div>
             <div className='routing'>
-              <div className={`sticky-nav ${isOpen ? 'open' : ''}`}>
+              <div className={`sticky-nav ${isMinesweeperInfo ? 'minesweeper-info' : ''}`}>
                 <button className="nav-toggle" onClick={toggleMenu} aria-label="toggle navigation">
                 <img id='nav-toggle-button' src={ham} alt=""width={20} height={20}/>
                   <span className="hamburger">
@@ -77,16 +81,18 @@ function NavBar() {
                     <li>
                       <HashLink smooth to="/#contact" onClick={() => {closeMenu();}}>Contact</HashLink>
                     </li>
+                      
                   </ul>
                 </nav>
               </div>
               <Routes>
                 <Route path='/' element={<Home />} />
+                <Route path='/MineSweeperInfo' element={<MinesweeperInfo />}/>
               </Routes>
             </div>
-          </div>
+
         </>
       );
     }
     
-    export default NavBar;
+export default NavBar;

@@ -1,7 +1,7 @@
 
 function MinesweeperInfo() {
     return (
-        <h1>Hej</h1>
+        <h1>Hej222222222222222222222222222222</h1>
 
     );
 }

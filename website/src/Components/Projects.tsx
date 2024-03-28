@@ -64,6 +64,7 @@ function Projects() {
   const Minesweeper = {
     name: 'Mine sweeper',
     link: 'https://github.com/DARPZZ/Minesweeper',
+    info: 'minesweeper',
     gameImage: mineswep,
 
   };

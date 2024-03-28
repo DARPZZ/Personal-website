@@ -5,6 +5,7 @@ import play from '../assets/play.png'
 interface GitHubProject {
   name: string;
   link: string;
+  info?: string;
   gameImage: string; 
   gamelink? : string;
   playGame? : string
@@ -17,6 +18,13 @@ interface Props {
   project: GitHubProject;
 }
 
+function linkingToInfoPage(project:GitHubProject)
+{
+  if(project.info === 'minesweeper')
+  {
+    window.location.href ='/#MineSweeperInfo'
+  }
+}
 const GitHubProjectComponent: React.FC<Props> = ({ project }) => {
   return (
     <div className='container'>
@@ -25,7 +33,7 @@ const GitHubProjectComponent: React.FC<Props> = ({ project }) => {
           <h2>{project.name}</h2>
         </div>
         <div>
-          <img className='gmae-img' src={project.gameImage} alt={project.name}  />
+          <img className='gmae-img' src={project.gameImage} alt={project.name} onClick={() => linkingToInfoPage(project)} />
           <div className='decide-a'>
             <a href={project.link} target="_blank" rel="noopener noreferrer">
               <div className='github-logo'>
