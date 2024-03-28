@@ -5,6 +5,7 @@ import './home.css'
 import { useState, useEffect } from 'react';
 import ham from '../assets/WhiteHamburgerIcon.png'
 import MinesweeperInfo from './Info-Components/MinesweeperInfo';
+import BlackjackInfo from './Info-Components/BlackjackInfo';
 import { HashLink as BaseHashLink } from 'react-router-hash-link';
 
 const HashLink = (props) => {
@@ -95,6 +96,7 @@ function NavBar() {
               <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/MineSweeperInfo' element={<MinesweeperInfo />}/>
+                <Route path='/BlackjackInfo' element={<BlackjackInfo />}/>
               </Routes>
             </div>
 

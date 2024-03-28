@@ -1,5 +1,5 @@
-import'./Info.css'
-function MinesweeperInfo() {
+
+function BlackjackInfo() {
     return (
         <div className="container">
            <h1 id='TEXT'>Hej blackjack</h1>
@@ -7,4 +7,4 @@ function MinesweeperInfo() {
     );
 }
 
-export default MinesweeperInfo;
+export default BlackjackInfo;
