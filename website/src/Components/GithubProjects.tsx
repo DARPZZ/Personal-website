@@ -22,10 +22,10 @@ function linkingToInfoPage(project:GitHubProject)
 {
   if(project.info === 'minesweeper')
   {
-    window.location.href ='/#MineSweeperInfo'
+    window.location.hash ='/#MineSweeperInfo'
   }else if (project.info === 'blackjack')
   {
-    window.location.href ='/#BlackjackInfo'
+    window.location.hash ='/#BlackjackInfo'
   }
 }
 const GitHubProjectComponent: React.FC<Props> = ({ project }) => {

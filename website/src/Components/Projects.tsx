@@ -76,7 +76,7 @@ function Projects() {
   }
   const blackjack ={
     name: "Blackjack",
-    link: "https://github.com/DARPZZ/Black-jack",
+    link: "https://github.com/DARPZZ/Blacjack-real",
     info: 'blackjack',
     gameImage: Blackjack,
   }

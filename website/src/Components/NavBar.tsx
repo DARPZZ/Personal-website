@@ -97,8 +97,8 @@ function NavBar() {
               </div>
               <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path='/MineSweeperInfo' element={<MinesweeperInfo />}/>
-                <Route path='/BlackjackInfo' element={<BlackjackInfo />}/>
+                <Route path='/#MineSweeperInfo' element={<MinesweeperInfo />}/>
+                <Route path='/#BlackjackInfo' element={<BlackjackInfo />}/>
               </Routes>
             </div>
 
