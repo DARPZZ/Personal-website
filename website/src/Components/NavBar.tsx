@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import ham from '../assets/WhiteHamburgerIcon.png'
 import MinesweeperInfo from './Info-Components/MinesweeperInfo';
 import BlackjackInfo from './Info-Components/BlackjackInfo';
+
 import { HashLink as BaseHashLink } from 'react-router-hash-link';
 
 const HashLink = (props) => {
@@ -34,7 +35,8 @@ const HashLink = (props) => {
 function NavBar() {
   
     const location = useLocation();
-    const isMinesweeperInfo = location.pathname === '/MineSweeperInfo';
+    const gamePaths = ['/MineSweeperInfo', '/BlackjackInfo', '/RockPaperScissorsInfo'];
+    const isGameInfo = gamePaths.includes(location.pathname);
     const [isOpen, setIsOpen] = useState(false);
   
     const toggleMenu = () => {
@@ -53,18 +55,18 @@ function NavBar() {
     };
     
     useEffect(() => {
-      if (isMinesweeperInfo) {
-        document.body.classList.add('minesweeper');
+      if (isGameInfo) {
+        document.body.classList.add('game-info');
       } else {
-        document.body.classList.remove('minesweeper');
+        document.body.classList.remove('game-info');
       }
-    }, [isMinesweeperInfo]);
+    }, [isGameInfo]);
     
     return (
         <>
-            <div className={`routing ${isMinesweeperInfo ? 'minesweeper-info' : ''}`}></div>
+            <div className={`routing ${isGameInfo ? 'game-info' : ''}`}></div>
             <div className='routing'>
-              <div className={`sticky-nav ${isMinesweeperInfo ? 'minesweeper-info' : ''}`}>
+              <div className={`sticky-nav ${isGameInfo ? 'game-info' : ''}`}>
                 <button className="nav-toggle" onClick={toggleMenu} aria-label="toggle navigation">
                 <img id='nav-toggle-button' src={ham} alt=""width={20} height={20}/>
                   <span className="hamburger">
