@@ -2,11 +2,10 @@ import { HashRouter as Router, Link, Routes, Route, useLocation } from 'react-ro
 import Home from './home';
 import './NavBar.css';
 import './home.css'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ham from '../assets/WhiteHamburgerIcon.png'
 import MinesweeperInfo from './Info-Components/MinesweeperInfo';
 import { HashLink as BaseHashLink } from 'react-router-hash-link';
-
 
 const HashLink = (props) => {
   const { to, ...rest } = props;
@@ -51,6 +50,14 @@ function NavBar() {
     const closeMenu = () => {
       setIsOpen(false);
     };
+    
+    useEffect(() => {
+      if (isMinesweeperInfo) {
+        document.body.classList.add('minesweeper');
+      } else {
+        document.body.classList.remove('minesweeper');
+      }
+    }, [isMinesweeperInfo]);
     
     return (
         <>

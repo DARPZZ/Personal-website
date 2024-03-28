@@ -1,0 +1,10 @@
+.container{
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+}
+#TEXT{
+    margin-top: 10%;
+    position: relative;
+    color: white;
+}
