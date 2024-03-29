@@ -1,7 +1,6 @@
 .container {
     width: 100%;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 120%;
 }
 
 .routing {
@@ -47,7 +46,7 @@ li {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    flex: 2; 
+    flex: 1; 
     
     transition: background-color 0.3s ease;
     padding: 10px 15px; 
