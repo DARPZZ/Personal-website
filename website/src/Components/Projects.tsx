@@ -30,15 +30,14 @@ const NextButton = ({ onClick }: { onClick: any }) => (
 
 const Projects = () => {
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow: <PreviousButton onClick={() => {}} />,
     nextArrow: <NextButton onClick={() => {}} />,
-    autoplay: true,
-    autoplaySpeed: 2000, 
+    //autoplay: true,
+    //  autoplaySpeed: 2000, 
     responsive: [
       {
         breakpoint: 1024,

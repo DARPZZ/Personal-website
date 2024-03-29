@@ -64,14 +64,13 @@ function NavBar() {
     
     return (
         <>
-            <div className={`routing ${isGameInfo ? 'game-info' : ''}`}></div>
+        <div className='container'>
+            <div className={`routing ${isGameInfo ? 'game-info' : ''}`}>
             <div className='routing'>
-              <div className={`sticky-nav ${isGameInfo ? 'game-info' : ''}`}>
+              <div className={`sticky-nav ${isGameInfo ? 'game-info' : ''} sticky-nav ${isOpen ? 'open' : ''}` }>
                 <button className="nav-toggle" onClick={toggleMenu} aria-label="toggle navigation">
                 <img id='nav-toggle-button' src={ham} alt=""width={20} height={20}/>
-                  <span className="hamburger">
-                    
-                  </span>
+                  <span className="hamburger"></span>
                 </button>
                 <nav>
                   <div className="animation start-home"></div>
@@ -94,6 +93,8 @@ function NavBar() {
                       
                   </ul>
                 </nav>
+                </div>
+              </div>
               </div>
               <Routes>
                 <Route path='/' element={<Home />} />
@@ -101,7 +102,6 @@ function NavBar() {
                 <Route path='/BlackjackInfo' element={<BlackjackInfo />}/>
               </Routes>
             </div>
-
         </>
       );
     }
