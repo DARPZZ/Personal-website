@@ -11,7 +11,7 @@
 }
 .project-header {
     position: relative;
-    right: 8%;
+  
     font-size: 30px;
     background-image: linear-gradient(to right, violet, blue);
     background-clip: text;

@@ -1,6 +1,7 @@
 .picture{
     position: relative;
     width: 40%;
+    left: 10%;
 }
 .about{
     right: 5%;
@@ -8,9 +9,9 @@
 }
 .text {
     position: absolute;
-    left: 40%;
+    left: 50%;
     width: 50%;
-    bottom: 20%; 
+    bottom: 10%; 
     color: white;
     font-size: 20px;
     max-height: calc(100% - 20px);
@@ -20,6 +21,7 @@
 #person-billede{
     width: 75%;
     height: 75%;
+    border-radius: 5%;
 }
 @media only screen and (max-width: 735px) {
     .text {
@@ -29,7 +31,7 @@
     }
     #person-billede{
         position: relative;
-        left: 50%;
+        left: 25%;
         width: 200%;
         height: 200%;
     }

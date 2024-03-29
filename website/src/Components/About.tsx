@@ -1,11 +1,12 @@
 import React from 'react';
 import pic from '../assets/download.jpg'
 import './About.css'
+import personBillede from '../assets/Person billede.jpg'
 function About() {
     return (
         <div className='about'>
             <div className='picture'>
-            <img id='person-billede' src={pic} />
+            <img id='person-billede' src={personBillede} />
             </div>
             <div className='text'>
                 <h2>Welcome to my website</h2>

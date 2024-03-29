@@ -9,22 +9,14 @@
     position: relative;
     display: flex; 
     justify-content: center; 
-    
-    right: 10%;
-
 }
 .contact-text{
     position: relative;
     text-align: center;
-    right: 10%;
     font-size: 30px;
     background-image: linear-gradient(to right, violet, blue);
     background-clip: text;
     color: transparent;
-}
-.email{
-    color: white;
-    font-size: 15px;
 }
 
 @media only screen and (max-width: 735px) {
