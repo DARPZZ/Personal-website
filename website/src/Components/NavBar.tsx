@@ -79,16 +79,16 @@ function NavBar() {
                       <Link to="/" onClick={() => {scrollToTop(); closeMenu();}}>Home</Link>
                     </li>
                     <li>
-                      <HashLink smooth to="/about" onClick={() => {closeMenu();}}>About</HashLink>
+                      <HashLink smooth to="/#about" onClick={() => {closeMenu();}}>About</HashLink>
                     </li>
                     <li>
-                      <HashLink smooth to="/tech" onClick={() => {closeMenu();}}>Technologies</HashLink>
+                      <HashLink smooth to="/#tech" onClick={() => {closeMenu();}}>Technologies</HashLink>
                     </li>
                     <li>
-                      <HashLink smooth to="/projects" onClick={() => {closeMenu();}}>Projects</HashLink>
+                      <HashLink smooth to="/#projects" onClick={() => {closeMenu();}}>Projects</HashLink>
                     </li>
                     <li>
-                      <HashLink smooth to="/contact" onClick={() => {closeMenu();}}>Contact</HashLink>
+                      <HashLink smooth to="/#contact" onClick={() => {closeMenu();}}>Contact</HashLink>
                     </li>
                       
                   </ul>
