@@ -12,6 +12,7 @@ import nameguide from '..//assets/Name guide.png';
 import rockPaperSis from '../assets/rockpaper .png';
 import højrePil from '../assets/Højrepil.png';
 import venstrePil from '../assets/Venstrepil.png';
+import NNTPBillede from '../assets/NNTP server.png'
 
 
 const PreviousButton = ({ onClick }: { onClick: any }) => (
@@ -88,8 +89,13 @@ const Projects = () => {
 
   const rockPaper = {
     name: 'Rock paper',
-    link: 'https://github.com/DARPZZ/Rock-paper-scissors',
+    link: 'https://github.com/DARPZZ/Sunsite-3',
     gameImage: rockPaperSis,
+  };
+  const NNTP = {
+    name: 'NNTP',
+    link: 'https://github.com/DARPZZ/Rock-paper-scissors',
+    gameImage: NNTPBillede,
     playGame: 'https://darpzz.github.io/Rock-paper-scissors/',
   };
 
@@ -97,6 +103,7 @@ const Projects = () => {
     <div className='container'>
       <div className='project-header'>
         <h2>Projects I have made</h2>
+        <p id='learned'>click on a picture to see vid and what learned</p>
       </div>
       <div className='caro'>
         <Slider {...settings}>
@@ -104,6 +111,7 @@ const Projects = () => {
           <div><GitHubProjectComponent project={SnakeGame} /></div>
           <div><GitHubProjectComponent project={Blackjack} /></div>
           <div><GitHubProjectComponent project={nameGuide} /></div>
+          <div><GitHubProjectComponent project={NNTP} /></div>
           <div><SpecialGitHubProjectComponent project={rockPaper} /></div>
         </Slider>
       </div>

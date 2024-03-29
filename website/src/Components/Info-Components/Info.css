@@ -1,10 +1,18 @@
-.container{
+.con{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: fit-content;
     background-color: black;
+    color: white;
 }
 #TEXT{
     margin-top: 10%;
     position: relative;
     color: white;
+}
+.things-learned{
+    margin-top: 7%;
+
 }

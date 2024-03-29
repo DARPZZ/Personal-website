@@ -22,7 +22,9 @@
 .gmae-img{
     width: 100%;
     height: 250px;
+    cursor: pointer;
 }
+
 
 .project-name{
     color: white;
@@ -113,7 +115,10 @@
 .right-button {
   text-align: right;
 }
-  
+#learned{
+  color: white;
+  font-size: 15px;
+}
 @media only screen and (max-width: 735px) {
     .project-header {
         font-size: 25px;
