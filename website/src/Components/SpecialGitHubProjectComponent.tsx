@@ -23,14 +23,14 @@ const SpecialGitHubProjectComponent: React.FC<Props> = ({ project }) => {
             <img src={project.gameImage} alt={project.name} className='gmae-img' />
             <div className='hest'>
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <div className='github-logo'>
+                <div className='github-logo2'>
                   <img src={github} alt="GitHub" width={150} height={75} /> 
                 </div>
               </a>
             </div>
             <div className='play-button'>
               <a href={project.playGame} target="_blank" rel="noopener noreferrer">
-                <img src={play} alt="play" width={150} height={75} />
+                <img id='play' src={play} alt="play" />
               </a>
             </div>
           </div>

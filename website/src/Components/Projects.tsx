@@ -17,15 +17,17 @@ import venstrePil from '../assets/Venstrepil.png';
 const PreviousButton = ({ onClick }: { onClick: any }) => (
   <div className='button1-div'>
     <button id='test' className='carousel-button-one' onClick={onClick}>
-      <img src={venstrePil} width={40} height={40} alt='Previous' />
+      <img src={venstrePil} width={60} height={60} alt='Previous' />
     </button>
   </div>
 );
 
 const NextButton = ({ onClick }: { onClick: any }) => (
-  <button className='carousel-button-two' onClick={onClick}>
-    <img src={højrePil} width={25} height={25} alt='Next' />
-  </button>
+  <div className='button2-div'>
+    <button className='carousel-button-two' onClick={onClick}>
+      <img src={højrePil} width={40} height={40} alt='Next' />
+    </button>
+  </div>
 );
 
 const Projects = () => {
@@ -37,7 +39,7 @@ const Projects = () => {
     prevArrow: <PreviousButton onClick={() => {}} />,
     nextArrow: <NextButton onClick={() => {}} />,
     autoplay: true,
-    autoplaySpeed: 2000, 
+    autoplaySpeed: 1500, 
     responsive: [
       {
         breakpoint: 1024,
