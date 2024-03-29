@@ -40,17 +40,18 @@
     background-clip: padding-box; 
     
 }
-.github-logo{
-    position: relative;
-    margin-top: 20%;
-    left: 60%;
-    
-}
-.github-logo2{
+.github-logo {
   position: relative;
-  margin-top: 33%;
-  left: 90%;
-  
+  width: 100%;
+  margin-top: 20%;
+  display: flex;
+  justify-content: center; 
+}
+.github-logo2 {
+  position: relative;
+  width: 100%;
+  margin-top: 67%;
+  left: 30%;
 }
 .hest{
     
@@ -63,7 +64,7 @@
 
 }
 .decide-a{
-    width: 50%;
+    width: 100%;
 }
 .button1-div{
   position: absolute;
