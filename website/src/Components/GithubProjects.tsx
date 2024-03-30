@@ -26,6 +26,8 @@ function linkingToInfoPage(project:GitHubProject)
   }else if (project.info === 'blackjack')
   {
     window.location.hash ='/BlackjackInfo'
+  }else if(project.info === 'snake'){
+    window.location.hash = '/SnakeInfo'
   }
 }
 const GitHubProjectComponent: React.FC<Props> = ({ project }) => {

@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import ham from '../assets/WhiteHamburgerIcon.png'
 import MinesweeperInfo from './Info-Components/MinesweeperInfo';
 import BlackjackInfo from './Info-Components/BlackjackInfo';
+import SnakeInfo from './Info-Components/SnakeInfo';
 
 import { HashLink as BaseHashLink } from 'react-router-hash-link';
 
@@ -35,7 +36,7 @@ const HashLink = (props) => {
 function NavBar() {
   
     const location = useLocation();
-    const gamePaths = ['/MineSweeperInfo', '/BlackjackInfo', '/RockPaperScissorsInfo'];
+    const gamePaths = ['/MineSweeperInfo', '/BlackjackInfo', '/RockPaperScissorsInfo', '/SnakeInfo'];
     const isGameInfo = gamePaths.includes(location.pathname);
     const [isOpen, setIsOpen] = useState(false);
   
@@ -100,6 +101,7 @@ function NavBar() {
                 <Route path='/' element={<Home />} />
                 <Route path='/MineSweeperInfo' element={<MinesweeperInfo />}/>
                 <Route path='/BlackjackInfo' element={<BlackjackInfo />}/>
+                <Route path='/SnakeInfo' element={<SnakeInfo />}/>
               </Routes>
             </div>
         </>

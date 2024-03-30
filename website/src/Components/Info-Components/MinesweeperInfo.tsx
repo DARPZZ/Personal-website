@@ -16,8 +16,8 @@ function MinesweeperInfo() {
                     <h2>Game Condition(win and loose)</h2>
                 </div>
                 <div className='pciture'>
-                <iframe width="700" height="500"
-                    src="https://www.youtube.com/embed/cn81ERY_OZI?autoplay=0&mute=1">      
+                <iframe width="1000" height="650"
+                    src="https://www.youtube.com/embed/cn81ERY_OZI?autoplay=1&mute=1">      
                     </iframe>
                 </div>
         </div>

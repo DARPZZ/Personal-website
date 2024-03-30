@@ -71,6 +71,7 @@ const Projects = () => {
   const SnakeGame = {
     name: 'Snake game',
     link: 'https://github.com/DARPZZ/Snake-game',
+    info: 'snake',
     gameImage: snake,
   };
 
@@ -103,7 +104,7 @@ const Projects = () => {
     <div className='container'>
       <div className='project-header'>
         <h2>Projects I have made</h2>
-        <p id='learned'>click on a picture to see vid and what learned</p>
+        <p id='learned'>click on a picture to see video and what i have learned</p>
       </div>
       <div className='caro'>
         <Slider {...settings}>
