@@ -9,11 +9,12 @@
 #TEXT{
     margin-top: 10%;
     position: relative;
-    color: white;
+    
 }
 .things-learned{
     margin-top: 12%;
     width: 70%;
+    font-size: 25px;
 }
 .info-picture{
     width: 100%;
