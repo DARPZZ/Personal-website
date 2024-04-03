@@ -1,6 +1,7 @@
 import './Info.css'
 import React, { useEffect, useRef, useState } from 'react';
 import { scrollToTop } from '../Scroll';
+import YouTubeVideo from './YouTubeVideo';
 function MinesweeperInfo() {
     scrollToTop()
     return (
@@ -16,9 +17,7 @@ function MinesweeperInfo() {
                     <h2>Game Condition(win and loose)</h2>
                 </div>
                 <div className='pciture'>
-                <iframe width="1000" height="650"
-                    src="https://www.youtube.com/embed/cn81ERY_OZI?autoplay=1&mute=1">      
-                    </iframe>
+                <YouTubeVideo videoId={'cn81ERY_OZI'}></YouTubeVideo>
                 </div>
         </div>
        </div>

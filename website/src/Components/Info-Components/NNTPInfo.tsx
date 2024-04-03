@@ -1,4 +1,5 @@
 import { scrollToTop } from "../Scroll";
+import YouTubeVideo from './YouTubeVideo';
 function NNTPInfo() {
     scrollToTop()
     return (
@@ -9,9 +10,7 @@ function NNTPInfo() {
                    
                 </div>
                 <div className='pciture'>
-                    <iframe width="1000" height="650"
-                        src="https://www.youtube.com/embed/dIuudb07AI0?autoplay=1&mute=1">      
-                    </iframe>
+                        <YouTubeVideo videoId={'CREmYAl5hGQ'}></YouTubeVideo>
                 </div>
         </div>
        </div>

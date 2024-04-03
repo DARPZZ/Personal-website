@@ -1,4 +1,6 @@
 import { scrollToTop } from "../Scroll";
+import './Info.css'
+import YouTubeVideo from './YouTubeVideo';
 function SnakeInfo() {
     scrollToTop()
     return (
@@ -16,9 +18,7 @@ function SnakeInfo() {
                     <h2>Handle new requirements half way through the project</h2>
                 </div>
                 <div className='pciture'>
-                <iframe width="1000" height="650"
-                    src="https://www.youtube.com/embed/dIuudb07AI0?autoplay=1&mute=1">      
-                    </iframe>
+                <YouTubeVideo videoId={'dIuudb07AI0'}></YouTubeVideo>
                 </div>
         </div>
        </div>

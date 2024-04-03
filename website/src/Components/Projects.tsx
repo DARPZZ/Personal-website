@@ -93,6 +93,7 @@ const Projects = () => {
     name: 'Rock paper',
     link: 'https://github.com/DARPZZ/Rock-paper-scissors',
     gameImage: rockPaperSis,
+    playGame: 'https://darpzz.github.io/Rock-paper-scissors/',
   };
   const NNTP = {
     name: 'NNTP',

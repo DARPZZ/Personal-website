@@ -1,6 +1,7 @@
 import './Info.css'
 import React, { useEffect, useRef, useState } from 'react';
 import { scrollToTop } from '../Scroll';
+import YouTubeVideo from './YouTubeVideo';
 function BlackjackInfo() {
     scrollToTop()
     return (
@@ -14,9 +15,7 @@ function BlackjackInfo() {
                    <h2>drawing on diffrent canvas depending on the player</h2>
                 </div>
                 <div className='pciture'>
-                <iframe width="1000" height="650"
-                    src="https://www.youtube.com/embed/9xZgLO2P3XI?autoplay=1&mute=1">      
-                    </iframe>
+                    <YouTubeVideo videoId={'9xZgLO2P3XI'}></YouTubeVideo>
                 </div>
         </div>
        </div>

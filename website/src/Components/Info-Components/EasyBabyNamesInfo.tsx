@@ -1,4 +1,6 @@
 import { scrollToTop } from "../Scroll";
+import './Info.css'
+import YouTubeVideo from './YouTubeVideo';
 function EasyBabyNamesInfo() {
     scrollToTop()
     return (
@@ -6,12 +8,14 @@ function EasyBabyNamesInfo() {
         <div className='things-learned'>
             <h1>Things that i have learned in this project</h1>
                 <div>
-                   <h2>easy baby</h2>
+                   <h2>Working with css</h2>
+                   <h2>working with html</h2>
+                   <h2>working with react</h2>
+                   <h2>Building my own webscraber</h2>
+                   <h2>Working with typescript </h2>
                 </div>
                 <div className='pciture'>
-                    <iframe width="1000" height="650"
-                        src="https://www.youtube.com/embed/dIuudb07AI0?autoplay=1&mute=1">      
-                    </iframe>
+                    <YouTubeVideo videoId={'xEMd6BL3_5E'}></YouTubeVideo>
                 </div>
         </div>
        </div>
