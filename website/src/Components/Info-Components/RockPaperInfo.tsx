@@ -9,7 +9,7 @@ function RockPaperInfo() {
                 <div>
                    <h2></h2>
                 </div>
-                <div className='pciture'>
+                <div className='info-picture'>
                         <YouTubeVideo videoId={'sii5du87a_Q'}></YouTubeVideo>
                 </div>
         </div>

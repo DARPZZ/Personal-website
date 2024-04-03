@@ -17,7 +17,7 @@ function SnakeInfo() {
                     <h2>Makeing software that you can easily maintain</h2>
                     <h2>Handle new requirements half way through the project</h2>
                 </div>
-                <div className='pciture'>
+                <div className='info-picture'>
                 <YouTubeVideo videoId={'dIuudb07AI0'}></YouTubeVideo>
                 </div>
         </div>

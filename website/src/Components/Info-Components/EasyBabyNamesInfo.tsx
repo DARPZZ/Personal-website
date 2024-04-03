@@ -14,7 +14,7 @@ function EasyBabyNamesInfo() {
                    <h2>Building my own webscraber</h2>
                    <h2>Working with typescript </h2>
                 </div>
-                <div className='pciture'>
+                <div className='info-picture'>
                     <YouTubeVideo videoId={'xEMd6BL3_5E'}></YouTubeVideo>
                 </div>
         </div>

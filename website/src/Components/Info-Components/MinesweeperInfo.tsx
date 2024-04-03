@@ -16,7 +16,7 @@ function MinesweeperInfo() {
                     <h2>Worked with share.cs</h2>
                     <h2>Game Condition(win and loose)</h2>
                 </div>
-                <div className='pciture'>
+                <div className='info-picture'>
                 <YouTubeVideo videoId={'cn81ERY_OZI'}></YouTubeVideo>
                 </div>
         </div>

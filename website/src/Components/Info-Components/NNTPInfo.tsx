@@ -9,7 +9,7 @@ function NNTPInfo() {
                 <div>
                    
                 </div>
-                <div className='pciture'>
+                <div className='info-picture'>
                         <YouTubeVideo videoId={'CREmYAl5hGQ'}></YouTubeVideo>
                 </div>
         </div>

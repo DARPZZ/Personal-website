@@ -14,7 +14,7 @@ function BlackjackInfo() {
                    <h2>Game Condition(win and loose)</h2>
                    <h2>drawing on diffrent canvas depending on the player</h2>
                 </div>
-                <div className='pciture'>
+                <div className='info-picture'>
                     <YouTubeVideo videoId={'9xZgLO2P3XI'}></YouTubeVideo>
                 </div>
         </div>
