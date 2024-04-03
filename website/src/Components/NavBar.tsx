@@ -9,6 +9,7 @@ import BlackjackInfo from './Info-Components/BlackjackInfo';
 import SnakeInfo from './Info-Components/SnakeInfo';
 import NNTPInfo from './Info-Components/NNTPInfo'
 import EasyBabyNamesInfo from './Info-Components/EasyBabyNamesInfo'
+import RockPaperInfo from './Info-Components/RockPaperInfo';
 import { HashLink as BaseHashLink } from 'react-router-hash-link';
 
 const HashLink = (props) => {
@@ -105,6 +106,7 @@ function NavBar() {
                 <Route path='/SnakeInfo' element={<SnakeInfo />}/>
                 <Route path='/NNTPInfo' element={<NNTPInfo/>}/>
                 <Route path='/EasybabyNames' element={<EasyBabyNamesInfo/>}/>
+                <Route path='/RockPaperInfo' element={<RockPaperInfo/>} />
               </Routes>
             </div>
         </>

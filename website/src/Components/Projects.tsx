@@ -92,6 +92,7 @@ const Projects = () => {
   const rockPaper = {
     name: 'Rock paper',
     link: 'https://github.com/DARPZZ/Rock-paper-scissors',
+    info: 'rockPaper',
     gameImage: rockPaperSis,
     playGame: 'https://darpzz.github.io/Rock-paper-scissors/',
   };

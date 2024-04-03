@@ -1,11 +1,10 @@
 .con{
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     background-color: black;
     color: white;
+
 }
 #TEXT{
     margin-top: 10%;
@@ -13,6 +12,10 @@
     color: white;
 }
 .things-learned{
-    margin-top: 7%;
-
+    margin-top: 12%;
+    width: 70%;
+}
+.picture{
+    width: 100%;
+    
 }

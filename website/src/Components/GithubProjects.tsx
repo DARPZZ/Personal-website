@@ -26,8 +26,7 @@ function linkingToInfoPage(project:GitHubProject)
     window.location.hash ='/BlackjackInfo'
   }else if(project.info === 'snake'){
     window.location.hash = '/SnakeInfo'
-  }else if (project.info === 'NNTP')
-  {
+  }else if (project.info === 'NNTP'){
     window.location.hash = '/NNTPInfo'
   }else if(project.info === 'nameGuide')
   {
