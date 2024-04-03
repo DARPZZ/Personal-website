@@ -11,7 +11,7 @@ function SnakeInfo() {
                     <h2>Crud support</h2>
                     <h2>User interface</h2>
                     <h2>Database connection</h2>
-                    <h2>Drawing diffrent shapes on canvas</h2>
+                    <h2>Draw shapes on canvas</h2>
                     <h2>Makeing software that you can easily maintain</h2>
                     <h2>Handle new requirements half way through the project</h2>
                 </div>

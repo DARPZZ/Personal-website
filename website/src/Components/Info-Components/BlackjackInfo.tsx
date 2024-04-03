@@ -8,12 +8,10 @@ function BlackjackInfo() {
         <div className='things-learned'>
             <h1>Things that i have learned in this project</h1>
                 <div>
-                    <h2>SDLC</h2>
                     <h2>User interface</h2>
-                    <h2>Recursion in c#</h2>
-                    <h2>Playing music in c#</h2>
-                    <h2>Worked with share.cs</h2>
-                    <h2>Game Condition(win and loose)</h2>
+                    <h2>Setting cards based of value</h2>
+                   <h2>Game Condition(win and loose)</h2>
+                   <h2>drawing on diffrent canvas depending on the player</h2>
                 </div>
                 <div className='pciture'>
                 <iframe width="1000" height="650"

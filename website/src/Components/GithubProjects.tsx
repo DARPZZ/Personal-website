@@ -1,4 +1,4 @@
-// Projects.css
+import React from 'react';
 import './Projects.css';
 import github from '../assets/Github.png'
 import play from '../assets/play.png'
@@ -11,8 +11,6 @@ interface GitHubProject {
   playGame? : string
 }
 
-import React from 'react';
-import Github from '../assets/Github.png'; 
 
 interface Props {
   project: GitHubProject;
@@ -28,6 +26,12 @@ function linkingToInfoPage(project:GitHubProject)
     window.location.hash ='/BlackjackInfo'
   }else if(project.info === 'snake'){
     window.location.hash = '/SnakeInfo'
+  }else if (project.info === 'NNTP')
+  {
+    window.location.hash = '/NNTPInfo'
+  }else if(project.info === 'nameGuide')
+  {
+    window.location.hash = '/EasyBabyNames'
   }
 }
 const GitHubProjectComponent: React.FC<Props> = ({ project }) => {

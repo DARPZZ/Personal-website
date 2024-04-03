@@ -7,7 +7,8 @@ import ham from '../assets/WhiteHamburgerIcon.png'
 import MinesweeperInfo from './Info-Components/MinesweeperInfo';
 import BlackjackInfo from './Info-Components/BlackjackInfo';
 import SnakeInfo from './Info-Components/SnakeInfo';
-
+import NNTPInfo from './Info-Components/NNTPInfo'
+import EasyBabyNamesInfo from './Info-Components/EasyBabyNamesInfo'
 import { HashLink as BaseHashLink } from 'react-router-hash-link';
 
 const HashLink = (props) => {
@@ -102,6 +103,8 @@ function NavBar() {
                 <Route path='/MineSweeperInfo' element={<MinesweeperInfo />}/>
                 <Route path='/BlackjackInfo' element={<BlackjackInfo />}/>
                 <Route path='/SnakeInfo' element={<SnakeInfo />}/>
+                <Route path='/NNTPInfo' element={<NNTPInfo/>}/>
+                <Route path='/EasybabyNames' element={<EasyBabyNamesInfo/>}/>
               </Routes>
             </div>
         </>

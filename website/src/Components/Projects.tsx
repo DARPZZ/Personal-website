@@ -85,19 +85,20 @@ const Projects = () => {
   const nameGuide = {
     name: 'Name guide',
     link: 'https://github.com/DARPZZ/Baby-names',
+    info: 'nameGuide',
     gameImage: nameguide,
   };
 
   const rockPaper = {
     name: 'Rock paper',
-    link: 'https://github.com/DARPZZ/Sunsite-3',
+    link: 'https://github.com/DARPZZ/Rock-paper-scissors',
     gameImage: rockPaperSis,
   };
   const NNTP = {
     name: 'NNTP',
-    link: 'https://github.com/DARPZZ/Rock-paper-scissors',
+    link: 'https://github.com/DARPZZ/Sunsite-3',
+    info: 'NNTP',
     gameImage: NNTPBillede,
-    playGame: 'https://darpzz.github.io/Rock-paper-scissors/',
   };
 
   return (
