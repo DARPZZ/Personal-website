@@ -6,7 +6,7 @@ function About() {
     return (
         <div className='about'>
             <div className='picture'>
-            <img id='person-billede' src={personBillede} />
+                <img id='person-billede' src={personBillede} />
             </div>
             <div className='text'>
                 <h2>Welcome to my website</h2>

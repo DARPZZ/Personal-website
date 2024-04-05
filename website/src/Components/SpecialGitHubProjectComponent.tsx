@@ -46,8 +46,5 @@ const SpecialGitHubProjectComponent: React.FC<Props> = ({ project }) => {
       </div>
     );
   };
-  
-
-
 
 export default SpecialGitHubProjectComponent;

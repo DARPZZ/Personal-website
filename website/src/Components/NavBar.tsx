@@ -69,35 +69,34 @@ function NavBar() {
         <>
         <div className='container'>
             <div className={`routing ${isGameInfo ? 'game-info' : ''}`}>
-            <div className='routing'>
-              <div className={`sticky-nav ${isGameInfo ? 'game-info' : ''} sticky-nav ${isOpen ? 'open' : ''}` }>
-                <button className="nav-toggle" onClick={toggleMenu} aria-label="toggle navigation">
-                <img id='nav-toggle-button' src={ham} alt=""width={20} height={20}/>
-                  <span className="hamburger"></span>
-                </button>
-                <nav>
-                  <div className="animation start-home"></div>
-                  <ul>
-                    <li>
-                      <Link to="/" onClick={() => {scrollToTop(); closeMenu();}}>Home</Link>
-                    </li>
-                    <li>
-                      <HashLink smooth to="/#about" onClick={() => {closeMenu();}}>About</HashLink>
-                    </li>
-                    <li>
-                      <HashLink smooth to="/#tech" onClick={() => {closeMenu();}}>Technologies</HashLink>
-                    </li>
-                    <li>
-                      <HashLink smooth to="/#projects" onClick={() => {closeMenu();}}>Projects</HashLink>
-                    </li>
-                    <li>
-                      <HashLink smooth to="/#contact" onClick={() => {closeMenu();}}>Contact</HashLink>
-                    </li>
-                      
-                  </ul>
-                </nav>
+              <div className='routing'>
+                <div className={`sticky-nav ${isGameInfo ? 'game-info' : ''} sticky-nav ${isOpen ? 'open' : ''}` }>
+                  <button className="nav-toggle" onClick={toggleMenu} aria-label="toggle navigation">
+                  <img id='nav-toggle-button' src={ham} alt=""width={20} height={20}/>
+                    <span className="hamburger"></span>
+                  </button>
+                  <nav>
+                    <div className="animation start-home"></div>
+                    <ul>
+                      <li>
+                        <Link to="/" onClick={() => {scrollToTop(); closeMenu();}}>Home</Link>
+                      </li>
+                      <li>
+                        <HashLink smooth to="/#about" onClick={() => {closeMenu();}}>About</HashLink>
+                      </li>
+                      <li>
+                        <HashLink smooth to="/#tech" onClick={() => {closeMenu();}}>Technologies</HashLink>
+                      </li>
+                      <li>
+                        <HashLink smooth to="/#projects" onClick={() => {closeMenu();}}>Projects</HashLink>
+                      </li>
+                      <li>
+                        <HashLink smooth to="/#contact" onClick={() => {closeMenu();}}>Contact</HashLink>
+                      </li>
+                    </ul>
+                  </nav>
+                  </div>
                 </div>
-              </div>
               </div>
               <Routes>
                 <Route path='/' element={<Home />} />
