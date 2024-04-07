@@ -20,3 +20,10 @@
     width: 100%;
     
 }
+@media only screen and (max-width: 735px) {
+    .things-learned{
+        width: 100%;
+        font-size: 12px;
+    }
+
+}

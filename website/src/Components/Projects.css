@@ -48,12 +48,6 @@
   display: flex;
   justify-content: center; 
 }
-.github-logo2 {
-  position: relative;
-  width: 100%;
-  margin-top: 67%;
-  left: 30%;
-}
 .hest{
     
     width: 30%;
@@ -138,9 +132,6 @@
     }
     .button2-div{
       left: 55%;
-    }
-    .github-logo{
-      left: 50%;
     }
     .project-name{
       font-size: 20px;
