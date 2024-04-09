@@ -35,6 +35,10 @@
         position: relative;
         right: 70%;
     }
+    .links{
+        position: relative;
+        right: 12%;
+    }
   }
   @media only screen and (min-width: 2000px) {
     .contact-text{

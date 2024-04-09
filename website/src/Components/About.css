@@ -26,14 +26,15 @@
 @media only screen and (max-width: 735px) {
     .text {
       position: relative;
-      margin-top: 90%;
-      left: 35%;
+      margin-top: 20%;
+      left: 15%;
+      width: 90%;
     }
     #person-billede{
         position: relative;
-        left: 25%;
-        width: 200%;
-        height: 200%;
+        margin-top: 80%;
+        width: 250%;
+        height: 250%;
     }
   }
   @media only screen and (min-width: 2000px) {
