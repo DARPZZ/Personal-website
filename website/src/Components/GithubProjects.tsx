@@ -31,6 +31,9 @@ function linkingToInfoPage(project:GitHubProject)
   }else if(project.info === 'nameGuide')
   {
     window.location.hash = '/EasyBabyNames'
+  }else if (project.info === 'sensor')
+  {
+    window.location.hash = '/SensorInfo'
   }
 }
 const GitHubProjectComponent: React.FC<Props> = ({ project }) => {

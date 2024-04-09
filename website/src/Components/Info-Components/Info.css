@@ -20,10 +20,31 @@
     width: 100%;
     
 }
+#server-billede{
+    width: 50%;
+    height: 400px;
+}
+.ekstra-info{
+    margin-top: 10%;
+}
+.ekstra-link{
+    margin-top: 5%;
+}
+#radar-sensor-link-color{
+    color: white;
+    font-size: 30px;
+    
+}
 @media only screen and (max-width: 735px) {
+    #server-billede{
+        width: 100%;
+    }
     .things-learned{
         width: 100%;
         font-size: 12px;
+    }
+    #radar-sensor-link-color{
+        font-size: 18px;
     }
 
 }

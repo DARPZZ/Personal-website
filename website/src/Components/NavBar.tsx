@@ -11,7 +11,7 @@ import NNTPInfo from './Info-Components/NNTPInfo'
 import EasyBabyNamesInfo from './Info-Components/EasyBabyNamesInfo'
 import RockPaperInfo from './Info-Components/RockPaperInfo';
 import { HashLink as BaseHashLink } from 'react-router-hash-link';
-
+import SensorInfo from './Info-Components/SensorInfo';
 const HashLink = (props) => {
   const { to, ...rest } = props;
   const scrollTo = (id) => {
@@ -106,6 +106,7 @@ function NavBar() {
                 <Route path='/NNTPInfo' element={<NNTPInfo/>}/>
                 <Route path='/EasybabyNames' element={<EasyBabyNamesInfo/>}/>
                 <Route path='/RockPaperInfo' element={<RockPaperInfo/>} />
+                <Route path='/SensorInfo' element={<SensorInfo/>}/>
               </Routes>
             </div>
         </>

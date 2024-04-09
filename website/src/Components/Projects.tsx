@@ -13,8 +13,11 @@ import rockPaperSis from '../assets/rockpaper .png';
 import højrePil from '../assets/Højrepil.png';
 import venstrePil from '../assets/Venstrepil.png';
 import NNTPBillede from '../assets/NNTP server.png'
+import SensorBillede from '../assets/Sensor.png'
+import { link } from 'fs';
+import { info } from 'console';
 
-
+//#region Buttons
 const PreviousButton = ({ onClick }: { onClick: any }) => (
   <div className='button1-div'>
     <button id='test' className='carousel-button-one' onClick={onClick}>
@@ -30,6 +33,7 @@ const NextButton = ({ onClick }: { onClick: any }) => (
     </button>
   </div>
 );
+//#endregion
 
 const Projects = () => {
   const settings = {
@@ -61,6 +65,7 @@ const Projects = () => {
     ]
   };
 
+//#region  projects
   const Minesweeper = {
     name: 'Mine sweeper',
     link: 'https://github.com/DARPZZ/Minesweeper',
@@ -73,6 +78,12 @@ const Projects = () => {
     link: 'https://github.com/DARPZZ/Snake-game',
     info: 'snake',
     gameImage: snake,
+  };
+  const Sensor = {
+    name: 'Sensor',
+    link: 'https://github.com/DARPZZ/graphtest2',
+    info: 'sensor',
+    gameImage: SensorBillede, 
   };
 
   const Blackjack = {
@@ -102,6 +113,7 @@ const Projects = () => {
     info: 'NNTP',
     gameImage: NNTPBillede,
   };
+  //#endregion
 
   return (
     <div className='container'>
@@ -117,6 +129,7 @@ const Projects = () => {
           <div><GitHubProjectComponent project={nameGuide} /></div>
           <div><GitHubProjectComponent project={NNTP} /></div>
           <div><SpecialGitHubProjectComponent project={rockPaper} /></div>
+          <div><GitHubProjectComponent project={Sensor} /></div>
         </Slider>
       </div>
     </div>
