@@ -48,15 +48,14 @@
   display: flex;
   justify-content: center; 
 }
-.hest{
-    
-    width: 30%;
-}
 .play-button{
     position: relative;
-    margin-top: -20%;
+    margin-top: -19%;
     left: 50%;
-
+}
+.hest{
+  position: relative;
+  margin-top: 20%;
 }
 .decide-a{
     width: 100%;
@@ -99,10 +98,10 @@
 }
 #play{
   position: relative;
-  left: 20%;
+  left: 25%;
 
-  width: 22%;
-  height: 22%;
+  width: 20%;
+  height: 20%;
 }
 
 .right-button {
