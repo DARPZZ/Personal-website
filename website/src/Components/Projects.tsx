@@ -81,7 +81,7 @@ const Projects = () => {
   };
   const Sensor = {
     name: 'Sensor',
-    link: 'https://github.com/DARPZZ/graphtest2',
+    link: 'https://github.com/DARPZZ/radar-graph',
     info: 'sensor',
     gameImage: SensorBillede, 
   };

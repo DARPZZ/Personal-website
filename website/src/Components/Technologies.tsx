@@ -10,6 +10,7 @@ import sql from '../assets/sql-removebg-preview.png'
 import mongoDB from '../assets/mongodb-removebg-preview.png'
 import cassandra from  '../assets/cassandra-removebg-preview.png'
 import react from '../assets/react-removebg-preview.png';
+import Flutter from '../assets/flutter-removebg-preview.png'
 
 function Technologies() {
     const logosRef = useRef(null);
@@ -95,7 +96,8 @@ const technologies = [
     { name: 'SQL', image: sql },
     { name: 'MongoDB', image: mongoDB},
     { name: 'Cassandra', image: cassandra},
-    { name: 'React', image: react}
+    { name: 'React', image: react},
+    {name:'Flutter', image: Flutter}
 ];
 
 export default Technologies;
