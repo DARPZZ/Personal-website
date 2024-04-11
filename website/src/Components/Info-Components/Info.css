@@ -47,4 +47,16 @@
         font-size: 18px;
     }
 
+
 }
+@media only screen and (min-width: 2000px) {
+    #server-billede{
+        width: 80%;
+        height: 850px;
+    }
+    #radar-sensor-link-color{
+        font-size: 40px;
+        
+    }
+
+  }
