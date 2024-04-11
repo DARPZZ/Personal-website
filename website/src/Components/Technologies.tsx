@@ -97,7 +97,7 @@ const technologies = [
     { name: 'MongoDB', image: mongoDB},
     { name: 'Cassandra', image: cassandra},
     { name: 'React', image: react},
-    { name:'Flutter', image: Flutter}
+    {name:'Flutter', image: Flutter}
 ];
 
 export default Technologies;
