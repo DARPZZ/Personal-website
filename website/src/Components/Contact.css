@@ -8,6 +8,7 @@
     position: relative;
     display: flex; 
     justify-content: center; 
+    
 }
 .contact-text{
     position: relative;
@@ -17,11 +18,13 @@
     background-clip: text;
     color: transparent;
 }
-#linkedin-link{
-    width: 40%;
-}
-#gmail-link{
-    width: 50%;
+#linkedin-image{
+    width: 100%;
+    height: 120px;
+  }
+#gmail-image{
+    width: 90%;
+    height: 100px;
 }
 
 @media only screen and (max-width: 735px) {
@@ -29,23 +32,13 @@
         font-size: 20px;
         left: 1%;
     }
-    .linkedIn-inner{
-     position: relative;
-     right: 40%;
-    }
-    .Gmail-inner{
-        position: relative;
-        left: 10%;
-    }
-    .email{
-        position: relative;
-        right: 70%;
-    }
     .links{
         position: relative;
-        right: 12%;
+        right: 10%;
     }
   }
+ 
+  
   @media only screen and (min-width: 2000px) {
     .contact-text{
         font-size: 45px;
