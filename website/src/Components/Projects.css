@@ -109,7 +109,7 @@
 }
 #learned{
   color: white;
-  font-size: 15px;
+  font-size: 20px;
 }
 #github-logo-size{
   width: 50%;
@@ -142,10 +142,15 @@
     #play{
       left: 25%;
     }
+
   }
 @media only screen and (min-width: 2000px) {
   .project-header{
     font-size: 45px;
+  }
+  .hest{
+    position: relative;
+    margin-top: 10%;
   }
   #learned{
     font-size: 30px;
