@@ -43,4 +43,16 @@
     .contact-text{
         font-size: 45px;
     }
+    #linkedin-image{
+        width: 160%;
+        height: 160px;
+        position: relative;
+        right: 50%;
+      }
+    #gmail-image{
+        width: 160%;
+        height: 130px;
+        position: relative;
+        margin-top: 10%;
+    }
 }
