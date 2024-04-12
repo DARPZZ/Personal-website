@@ -32,7 +32,7 @@ const SpecialGitHubProjectComponent: React.FC<Props> = ({ project }) => {
             <div className='hest'>
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <div className='github-logo2'>
-                  <img src={github} alt="GitHub" width={150} height={75} /> 
+                  <img id='github-logo-size' src={github} alt="GitHub" /> 
                 </div>
               </a>
             </div>

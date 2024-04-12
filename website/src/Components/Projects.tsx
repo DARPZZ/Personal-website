@@ -43,7 +43,7 @@ const Projects = () => {
     slidesToScroll: 1,
     prevArrow: <PreviousButton onClick={() => {}} />,
     nextArrow: <NextButton onClick={() => {}} />,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 1500, 
     responsive: [
       {
@@ -88,7 +88,7 @@ const Projects = () => {
 
   const Blackjack = {
     name: 'Blackjack',
-    link: 'https://github.com/DARPZZ/Blackjack-real',
+    link: 'https://github.com/DARPZZ/Blacjack-real',
     info: 'blackjack',
     gameImage: blackjack,
   };

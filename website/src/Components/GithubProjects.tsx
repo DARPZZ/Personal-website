@@ -48,7 +48,7 @@ const GitHubProjectComponent: React.FC<Props> = ({ project }) => {
           <div className='decide-a'>
             <a href={project.link} target="_blank" rel="noopener noreferrer">
               <div className='github-logo'>
-                <img src={github} alt="GitHub" width={150} height={75} /> 
+                <img id='github-logo-size' src={github} alt="GitHub" /> 
               </div>
             </a>
           </div>
