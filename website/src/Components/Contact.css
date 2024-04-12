@@ -17,6 +17,12 @@
     background-clip: text;
     color: transparent;
 }
+#linkedin-link{
+    width: 40%;
+}
+#gmail-link{
+    width: 50%;
+}
 
 @media only screen and (max-width: 735px) {
     .contact-text {

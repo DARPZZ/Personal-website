@@ -51,12 +51,18 @@ function Technologies() {
     function mobileSpeed() {
         chooseSpeed(3)
     }
-    
+    function highSpeed()
+    {
+        chooseSpeed(8)
+    }
     useEffect(() => {
         if (loadedImages === technologies.length) {
             if (window.innerWidth < 400) {
                 mobileSpeed();
-            } else {
+            } else if(window.innerWidth >2000){
+                highSpeed();
+            }
+             else {
                 normalSpeed();
             }
         }
