@@ -2,6 +2,7 @@
 import './Projects.css';
 import github from '../assets/Github.png'
 import play from '../assets/play-removebg-preview.png'
+import {LinkToPage} from './LinkToInfoPage'
 interface GitHubProject {
   name: string;
   link: string;
@@ -14,12 +15,6 @@ interface Props {
   project: GitHubProject;
 }
 
-function linkingToInfoPage(project:GitHubProject)
-{
-  if(project.info ==='rockPaper'){
-    window.location.hash = '/RockPaperInfo'
-  }
-}
 const SpecialGitHubProjectComponent: React.FC<Props> = ({ project }) => {
     return (
       <div className='container'>
@@ -28,8 +23,8 @@ const SpecialGitHubProjectComponent: React.FC<Props> = ({ project }) => {
             <h2>{project.name}</h2>
           </div>
           <div>
-            <img src={project.gameImage} alt={project.name} className='gmae-img' onClick={() => linkingToInfoPage(project)} />
-            <div className='hest'>
+            <img src={project.gameImage} alt={project.name} className='gmae-img' onClick={() => LinkToPage(project)} />
+            <div className='project-link-css'>
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <div className='github-logo2'>
                   <img id='github-logo-size' src={github} alt="GitHub" /> 

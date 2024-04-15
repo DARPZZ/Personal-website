@@ -12,6 +12,7 @@ import EasyBabyNamesInfo from './Info-Components/EasyBabyNamesInfo'
 import RockPaperInfo from './Info-Components/RockPaperInfo';
 import { HashLink as BaseHashLink } from 'react-router-hash-link';
 import SensorInfo from './Info-Components/SensorInfo';
+import {scrollToTop} from './Scroll'
 const HashLink = (props) => {
   const { to, ...rest } = props;
   const scrollTo = (id) => {
@@ -45,13 +46,6 @@ function NavBar() {
     const toggleMenu = () => {
       setIsOpen(!isOpen);
     };
-  
-    const scrollToTop = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    };
     
     const closeMenu = () => {
       setIsOpen(false);
@@ -79,7 +73,7 @@ function NavBar() {
                     <div className="animation start-home"></div>
                     <ul>
                       <li>
-                        <Link to="/" onClick={() => {scrollToTop(); closeMenu();}}>Home</Link>
+                        <Link to="/" onClick={() => {scrollToTop("smooth"); closeMenu();}}>Home</Link>
                       </li>
                       <li>
                         <HashLink smooth to="/#about" onClick={() => {closeMenu();}}>About</HashLink>
