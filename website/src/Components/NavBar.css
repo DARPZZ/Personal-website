@@ -29,7 +29,7 @@ li {
     transform: translateX(-50%); 
     width: 55%;
     z-index: 1;
-    height: 10%;
+    height: fit-content;
     font-size: 20px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
