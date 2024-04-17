@@ -100,14 +100,14 @@ body:not(.game-info) span:nth-child(5){
   right: 400px;
   left: initial;
   animation-delay: 0.8s;
-  animation-duration: 2.5s;
+  animation-duration: 7.5s;
 }
 body:not(.game-info) span:nth-child(6){
   top: 0%;
   right: 100%;
   left: initial;
   animation-delay: 1s;
-  animation-duration: 3s;
+  animation-duration: 7s;
 }
 body:not(.game-info) span:nth-child(7){
   top: 90%;
@@ -128,7 +128,7 @@ body:not(.game-info) span:nth-child(9){
   right: 1000px;
   left: initial;
   animation-delay: 0.75s;
-  animation-duration: 3.25s;
+  animation-duration: 6.25s;
 }
 body:not(.game-info) span:nth-child(9){
   top: 44%;

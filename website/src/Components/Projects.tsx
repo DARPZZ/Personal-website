@@ -43,7 +43,7 @@ const Projects = () => {
     slidesToScroll: 1,
     prevArrow: <PreviousButton onClick={() => {}} />,
     nextArrow: <NextButton onClick={() => {}} />,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000, 
     responsive: [
       {
