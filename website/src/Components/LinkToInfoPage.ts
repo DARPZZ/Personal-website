@@ -6,4 +6,5 @@ export function LinkToPage(project :any) {
     else if(project.info === 'nameGuide'){window.location.hash = '/EasyBabyNames'}
     else if (project.info === 'sensor'){window.location.hash = '/SensorInfo'}
     else if(project.info ==='rockPaper'){window.location.hash = '/RockPaperInfo'}
+    else if (project.info ==='discord'){window.location.hash ='discordInfo'}
 }

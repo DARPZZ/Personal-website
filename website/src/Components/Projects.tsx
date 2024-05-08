@@ -14,6 +14,7 @@ import højrePil from '../assets/Højrepil.png';
 import venstrePil from '../assets/Venstrepil.png';
 import NNTPBillede from '../assets/NNTP server.png'
 import SensorBillede from '../assets/Sensor.png'
+import discordBotBillede from '../assets/Discord bot.png'
 import { link } from 'fs';
 import { info } from 'console';
 
@@ -113,6 +114,12 @@ const Projects = () => {
     info: 'NNTP',
     gameImage: NNTPBillede,
   };
+  const Discord={
+    name: 'Discord bot',
+    link: 'https://github.com/DARPZZ/Discord_BOT',
+    info: 'discord',
+    gameImage: discordBotBillede,
+  }
   //#endregion
 
   return (
@@ -130,6 +137,7 @@ const Projects = () => {
           <div><GitHubProjectComponent project={NNTP} /></div>
           <div><SpecialGitHubProjectComponent project={rockPaper} /></div>
           <div><GitHubProjectComponent project={Sensor} /></div>
+          <div><GitHubProjectComponent project={Discord} /></div>
         </Slider>
       </div>
     </div>

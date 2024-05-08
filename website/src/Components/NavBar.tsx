@@ -9,6 +9,7 @@ import BlackjackInfo from './Info-Components/BlackjackInfo';
 import SnakeInfo from './Info-Components/SnakeInfo';
 import NNTPInfo from './Info-Components/NNTPInfo'
 import EasyBabyNamesInfo from './Info-Components/EasyBabyNamesInfo'
+import DiscordBotInfo from './Info-Components/DiscordBotInfo';
 import RockPaperInfo from './Info-Components/RockPaperInfo';
 import { HashLink as BaseHashLink } from 'react-router-hash-link';
 import SensorInfo from './Info-Components/SensorInfo';
@@ -101,6 +102,7 @@ function NavBar() {
                 <Route path='/EasybabyNames' element={<EasyBabyNamesInfo/>}/>
                 <Route path='/RockPaperInfo' element={<RockPaperInfo/>} />
                 <Route path='/SensorInfo' element={<SensorInfo/>}/>
+                <Route path='/discordInfo' element={<DiscordBotInfo/>}/>
               </Routes>
             </div>
         </>
